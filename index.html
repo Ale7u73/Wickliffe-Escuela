@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escuela Juan Wickliffe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-blue-50">
+    <header class="bg-blue-700 text-white py-4 shadow-md">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="#" class="flex items-center text-xl font-semibold">
+                <i class="fas fa-graduation-cap mr-2 text-yellow-400"></i>
+                <span class="text-yellow-400">Escuela</span> <span class="font-normal">Juan Wickliffe</span>
+            </a>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-6">
+                    <li><a href="#inicio" class="hover:text-yellow-300 transition duration-300">Inicio</a></li>
+                    <li><a href="#la-escuela" class="hover:text-yellow-300 transition duration-300">La Escuela</a></li>
+                    <li><a href="#quienes-somos" class="hover:text-yellow-300 transition duration-300">Quiénes Somos</a></li>
+                    <li><a href="#galeria" class="hover:text-yellow-300 transition duration-300">Galería</a></li>
+                    <li><a href="#objetivos" class="hover:text-yellow-300 transition duration-300">Objetivos</a></li>
+                    <li><a href="#ubicacion" class="hover:text-yellow-300 transition duration-300">Ubicación</a></li>
+                    <li><a href="#horarios" class="hover:text-yellow-300 transition duration-300">Horarios</a></li>
+                    <li><a href="#contacto" class="hover:text-yellow-300 transition duration-300">Contacto</a></li>
+                </ul>
+            </nav>
+            <button id="menu-button" class="md:hidden text-white focus:outline-none" aria-label="Menú">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+    </header>
+
+    <div id="mobile-menu" class="hidden fixed top-0 left-0 w-full h-full bg-blue-900 bg-opacity-90 z-50">
+        <div class="bg-blue-800 w-80 h-full absolute right-0 p-6">
+            <div class="flex justify-end mb-4">
+                <button id="close-menu-button" class="text-white focus:outline-none" aria-label="Cerrar menú">
+                    <i class="fas fa-times text-xl"></i>
+                </button>
+            </div>
+            <nav class="block">
+                <ul class="space-y-4">
+                    <li><a href="#inicio" class="block text-lg text-white hover:text-yellow-300 transition duration-300">Inicio</a></li>
+                    <li><a href="#la-escuela" class="block text-lg text-white hover:text-yellow-300 transition duration-300">La Escuela</a></li>
+                    <li><a href="#quienes-somos" class="block text-lg text-white hover:text-yellow-300 transition duration-300">Quiénes Somos</a></li>
+                    <li><a href="#galeria" class="block text-lg text-white hover:text-yellow-300 transition duration-300">Galería</a></li>
+                    <li><a href="#objetivos" class="block text-lg text-white hover:text-yellow-300 transition duration-300">Objetivos</a></li>
+                    <li><a href="#ubicacion" class="block text-lg text-white hover:text-yellow-300 transition duration-300">Ubicación</a></li>
+                    <li><a href="#horarios" class="block text-lg text-white hover:text-yellow-300 transition duration-300">Horarios</a></li>
+                    <li><a href="#contacto" class="block text-lg text-white hover:text-yellow-300 transition duration-300">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <main>
+        <section id="inicio" class="bg-blue-50 py-16 md:py-24">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl md:text-4xl font-semibold text-blue-800 mb-4">Bienvenido a la Escuela Juan Wickliffe</h2>
+                <p class="text-lg text-gray-700 mb-8"> Aqui se peude poner algun eslogan o frase </p>
+                <a href="#contacto" class="bg-yellow-500 hover:bg-yellow-600 text-blue-700 font-semibold py-3 px-6 rounded-full transition duration-300">Contáctanos</a>
+            </div>
+        </section>
+
+        <section id="la-escuela" class="bg-white py-16 md:py-24">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-semibold text-blue-800 mb-8 text-center">La Escuela</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-blue-700 mb-4">Historia</h3>
+                        <p class="text-gray-700"></p>
+                        <h3 class="text-2xl font-semibold text-blue-700 mt-6 mb-4">Filosofía y Valores</h3>
+                        <p class="text-gray-700"></p>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-blue-700 mb-4">Modelo Educativo</h3>
+                        <p class="text-gray-700"></p>
+                        <h3 class="text-2xl font-semibold text-blue-700 mt-6 mb-4">Instalaciones</h3>
+                        <p class="text-gray-700"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="quienes-somos" class="bg-blue-50 py-16 md:py-24">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-semibold text-blue-800 mb-8 text-center">Quiénes Somos</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <p class="text-lg text-gray-700">
+                            
+                        </p>
+                        <p class="text-lg text-gray-700 mt-4">
+                            
+                        </p>
+                    </div>
+                    <div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <img src="https://placehold.co/200x150/E0E0E0/000000?text=Equipo1&font=Montserrat" alt="Fotos" class="rounded-lg overflow-hidden shadow-md">
+                            <img src="https://placehold.co/200x150/E0E0E0/000000?text=Equipo2&font=Montserrat" alt="Fotos" class="rounded-lg overflow-hidden shadow-md">
+                            <img src="https://placehold.co/200x150/E0E0E0/000000?text=Equipo3&font=Montserrat" alt="Fotos" class="rounded-lg overflow-hidden shadow-md col-span-2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria" class="bg-white py-16 md:py-24">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-semibold text-blue-800 mb-8 text-center">Galería de Fotos</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="rounded-lg overflow-hidden shadow-md">
+                    <img src="https://placehold.co/400x300/E0E0E0/000000?text=Foto1&font=Montserrat" alt="Imagen 1" class="w-full h-auto">
+                    </div>
+                    <div class="rounded-lg overflow-hidden shadow-md">
+                    <img src="https://placehold.co/400x300/E0E0E0/000000?text=Foto2&font=Montserrat" alt="Imagen 2" class="w-full h-auto">
+                    </div>
+                    <div class="rounded-lg overflow-hidden shadow-md">
+                    <img src="https://placehold.co/400x300/E0E0E0/000000?text=Foto3&font=Montserrat" alt="Imagen 3" class="w-full h-auto">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="objetivos" class="bg-white py-16 md:py-24">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-semibold text-blue-800 mb-8 text-center">Objetivos</h2>
+                <ul class="list-disc list-inside text-lg text-gray-700">
+                    <li class="mb-2"></li>
+                    <li class="mb-2"></li>
+                    <li class="mb-2"></li>
+                    <li class="mb-2"></li>
+                    <li class="mb-2"></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="ubicacion" class="bg-blue-50 py-16 md:py-24">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-semibold text-blue-800 mb-8 text-center">Ubicación</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <div class="bg-white shadow-md rounded-lg p-6">
+                            <h3 class="text-2xl font-semibold text-blue-700 mb-4">Nuestra Dirección</h3>
+                            <p class="text-gray-700">Calz. Simon Bolívar 1070</p>
+                            <p class="text-gray-700">Ignacio Zaragoza, 91910 Veracruz, Ver.</p>
+                            <p class="text-gray-700 mt-4">
+                                <a href="https://maps.app.goo.gl/gX972wMCdWwLsb2a7" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 transition duration-300">
+                                    Ver en Google Maps <i class="fas fa-map-marker-alt ml-1"></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <iframe src="https://www.google.com/maps?q=Calz+Simon+Bolivar+No.+1070+Veracruz,+Ver&output=embed" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="horarios" class="bg-white py-16 md:py-24">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-semibold text-blue-800 mb-8 text-center">Horarios</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-blue-700 mb-4">Horarios de Clases</h3>
+                        <table class="w-full">
+                            <thead class="bg-blue-100">
+                                <tr>
+                                    <th class="py-2 px-4 text-left text-gray-700 font-semibold">Grado</th>
+                                    <th class="py-2 px-4 text-left text-gray-700 font-semibold">Hora de Inicio</th>
+                                    <th class="py-2 px-4 text-left text-gray-700 font-semibold">Hora de Fin</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="py-2 px-4 border-b border-gray-200">Secundaria</td>
+                                    <td class="py-2 px-4 border-b border-gray-200"></td>
+                                    <td class="py-2 px-4 border-b border-gray-200"></td>
+                                </tr>
+                                <tr>
+                                    <td class="py-2 px-4 border-b border-gray-200">Bachillerato</td>
+                                    <td class="py-2 px-4 border-b border-gray-200"></td>
+                                    <td class="py-2 px-4 border-b border-gray-200"></td>
+                                </tr>
+                                <tr>
+                                    <td class="py-2 px-4 border-b border-gray-200">Actividades Extracurriculares</td>
+                                    <td class="py-2 px-4 border-b border-gray-200"></td>
+                                    <td class="py-2 px-4 border-b border-gray-200"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-blue-700 mb-4">Horario de Oficina</h3>
+                        <ul class="list-disc list-inside">
+                            <li class="py-1 text-gray-700">Lunes a Viernes: </li>
+                            <li class="py-1 text-gray-700">Sábados: </li>
+                            <li class="py-1 text-gray-700">Domingos: Cerrado</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="bg-blue-50 py-16 md:py-24">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-semibold text-blue-800 mb-8 text-center">Contacto</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <div class="bg-white shadow-md rounded-lg p-6">
+                            <h3 class="text-2xl font-semibold text-blue-700 mb-4">Información de Contacto</h3>
+                            <ul class="list-none">
+                                <li class="py-2 text-gray-700 flex items-center">
+                                    <i class="fas fa-phone mr-2 text-blue-500"></i>
+                                    Teléfono:
+                                </li>
+                                <li class="py-2 text-gray-700 flex items-center">
+                                    <i class="fas fa-envelope mr-2 text-blue-500"></i>
+                                    Email:
+                                </li>
+                                <li class="py-2 text-gray-700 flex items-center">
+                                    <i class="fas fa-map-marker-alt mr-2 text-blue-500"></i>
+                                    Dirección: Calz Simon Bolivar No. 1070 Entre 20 de Noviembre, Av Lafragua y, Ignacio Zaragoza, 91910 Veracruz, Ver.
+                                </li>
+                            </ul>
+                            <div class="mt-6">
+                                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 transition duration-300 mr-4">
+                                    <i class="fab fa-facebook-square text-2xl"></i>
+                                </a>
+                                <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 transition duration-300 mr-4">
+                                    <i class="fab fa-twitter-square text-2xl"></i>
+                                </a>
+                                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 transition duration-300">
+                                    <i class="fab fa-instagram text-2xl"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <form class="bg-white shadow-md rounded-lg p-6">
+                            <h3 class="text-2xl font-semibold text-blue-700 mb-4">Formulario de Contacto</h3>
+                            <div class="mb-4">
+                                <label for="nombre" class="block text-gray-700 text-sm font-bold mb-2">Nombre:</label>
+                                <input type="text" id="nombre" name="nombre" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email:</label>
+                                <input type="email" id="email" name="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                            </div>
+                            <div class="mb-4">
+                                <label for="mensaje" class="block text-gray-700 text-sm font-bold mb-2">Mensaje:</label>
+                                <textarea id="mensaje" name="mensaje" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"></textarea>
+                            </div>
+                            <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Enviar Mensaje</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-blue-800 text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p>© 2024 Escuela Juan Wickliffe. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const closeMenuButton = document.getElementById('close-menu-button');
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        const navLinks = document.querySelectorAll('.nav-links a');
+        const sections = document.querySelectorAll('section');
+
+        function toggleMobileMenu() {
+            mobileMenu.classList.toggle('hidden');
+        }
+
+        menuButton.addEventListener('click', toggleMobileMenu);
+        closeMenuButton.addEventListener('click', toggleMobileMenu);
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', toggleMobileMenu);
+        });
+
+        document.addEventListener('click', (event) => {
+            if (!mobileMenu.classList.contains('hidden') && !mobileMenu.contains(event.target) && event.target !== menuButton) {
+                toggleMobileMenu();
+            }
+        });
+
+        function updateActiveNavLink() {
+            let currentSectionId = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.scrollY >= sectionTop - 100 && window.scrollY < sectionTop + sectionHeight - 100) {
+                    currentSectionId = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').slice(1) === currentSectionId) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', updateActiveNavLink);
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
